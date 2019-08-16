@@ -1,9 +1,9 @@
 #!/bin/bash
-#一个for循环1000次，顺序执行1000次任务
+#一个for循环10次，顺序执行10次任务
 
 start_time=`date +%s` #定义脚本运行的开始时间
 
-for ((i=1;i<=1000;i++))
+for ((i=1;i<=10;i++))
 do
         sleep 1  #sleep 1用来模仿执行一条命令需要花费的时间（可以用真实命令来代替）
         echo 'success'$i;
