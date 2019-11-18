@@ -1,0 +1,1 @@
+*/1 * * * * /opt/scripts/crontab_test.sh >> /data/logs/scripts/crontab_test.log
