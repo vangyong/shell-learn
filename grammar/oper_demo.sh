@@ -52,15 +52,19 @@ else
     echo "-z $a :字符串长度不为0"
 fi
 
+echo "文件测试运算"
+file_name="/root/anaconda-ks.cfg"
+if [ -d $file_name ]
+then 
+    echo "文件是目录"
+else
+    echo "不是目录"
+fi
 
-
-
-
-
-
-
-
-
-
-
+if [ -s $file_name ]
+then 
+    echo "文件不为空"
+else
+    echo "文件为空"
+fi
 
