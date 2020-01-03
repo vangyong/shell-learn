@@ -8,6 +8,7 @@ APPLICATION_HOME=/opt/test
 # JVM Memory Control
 JAVA_OPTS="$JAVA_OPTS -XX:MaxMetaspaceSize=128m -Xmx1024M -XX:MinHeapFreeRatio=30 -XX:MaxHeapFreeRatio=50"
 # JAVA_OPTS="$JAVA_OPTS -XX:OnOutOfMemoryError=$KILL_SELF"
+JAVA_OPTS = "$JAVA_OPTS -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/data/logs/test/springboot1-test.dump"
 
 # JMX config
 JMX_HOST=10.10.143.150
