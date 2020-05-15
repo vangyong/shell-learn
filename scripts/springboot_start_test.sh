@@ -1,6 +1,6 @@
 #!/bin/bash
 
-JAVA_HOME=/opt/local/jdk
+JAVA_HOME=/usr/java/jdk1.8.0_144
 JAVA_EXEC=$JAVA_HOME/bin/java
 APPLICATION_HOME=/opt/test
 
@@ -11,7 +11,7 @@ JAVA_OPTS="$JAVA_OPTS -XX:MaxMetaspaceSize=128m -Xmx1024M -XX:MinHeapFreeRatio=3
 JAVA_OPTS = "$JAVA_OPTS -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/data/logs/test/springboot1-test.dump"
 
 # JMX config
-JMX_HOST=10.10.143.150
+JMX_HOST=192.168.0.151
 JMX_PORT=18080
 JAVA_OPTS="$JAVA_OPTS \
 -Dcom.sun.management.jmxremote -Djava.rmi.server.hostname=$JMX_HOST \
